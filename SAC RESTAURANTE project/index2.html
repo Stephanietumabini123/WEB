@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SAC de Restaurante</title>
+        <link rel="stylesheet" href="style2.css">
+        <link rel="icon" href="Images/th.jpeg">
+        <script src="https://kit.fontawesome.com/579e0b9376.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+
+            <!--HEADER HERE-->
+            <div class="toplink">
+                <div class="topnav">
+                    <a class="active" href="#home">Home</a>
+                    <a href="#menu">Menu</a>
+                    <a href="#about" id="ab">About</a>
+                    <a href="#services">Services</a>
+                    <a href="#contact">Contact us</a>
+                  </div>
+            </div>
+              <!--HEADER END-->
+              
+        </header>
+        <main>
+            <section id="home">
+                <div class="homie">
+                    <br>
+                    <br>
+                    <h1>Your Perfect Celebration <br>Start Here</h1>
+                     
+        
+
+                  
+                   <a href="#menu"> <button class="button">Choose Menu</button></a>
+                </div>
+            </section>
+        </main>
+
+
+
+            <!-- <div class="media">
+                <div class="vids">
+                    <div class="picture">
+                        <img src="Images/hours.jpg">
+
+                    </div>
+                    <div class="video">
+                        
+                    </div>
+                </div>
+            </div> -->
+
+
+            <div class="cent">
+                <div class="med">
+                    <div class="im">
+                        <img src="Images/hours.jpg">
+
+                    </div>
+                    <div class="vid">
+                        <div class="video">
+                            
+                            <!-- <iframe
+                            src="https://www.youtube.com/watch?v=2Q1fK7OJfHk">
+                            </iframe> -->
+
+                            <video controls autoplay>
+                                <source src="C:\Users\Step123\Desktop\HTML Project\Videos\Restaurant Promo Video _ Sigma 30mm f_1.4.mp4">
+                            </video>
+
+
+                        </div>
+                        <div class="aud">
+                            <audio controls>
+                                <source src="c:\Users\Step123\Downloads\Seasons - Telecasted.mp3">
+                               </audio>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+           
+            
+            </div>
+
+        
+          
+        <!--IMAGES HERE-->
+        <div class="images" id="menu">
+    
+              <img src="Images/chicken-roulade.jpg" >
+              <h1>Chicken Roulade<br><p>Price:₱250.00</p></h1>
+             
+              <img src="Images/lazagana.jpg" >
+              <h1>Lasagna<br> <p>Price:₱350.00</p></h1>
+
+              <img src="Images/453002865.jpg" >
+              <h1>Fish Fillet<br> <p>Price:₱150.00</p></h1>
+              
+              <img src="Images/DSC_4475-1024x793.jpg" >
+              <h1>Bone Marrow<br> <p>Price:₱200.00</p></h1>
+
+              <img src="Images/Specially-Selected-Wagyu-Ribeye-Steak-2048x1365.jpg" >
+              <h1>Wagyo Ribeye<br> <p>Price:₱10,000</p></h1>
+
+              <img src="Images/wp-1615073589196.jpg" >
+              <h1>SeaFood Bundle<br> <p>Price:₱800.00</p></h1>
+            </div>
+           
+            <!--IMAGES END-->
+
+            <!--DISH CALCULATOR HERE-->
+            <div id="calculator">
+                <h1>Calculate your orders here</h1>
+                <br>
+                <label for="dishName">Dish Name:</label>
+                <input type="text" id="dishName" placeholder="Enter dish name">
+        
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" placeholder="Enter quantity">
+        
+                <label for="unitPrice">Unit Price:</label>
+                <input type="number" id="unitPrice" placeholder="Enter unit price">
+        
+                <button onclick="calculateAndAlert()">Calculate</button>
+            </div>
+           <!--END-->
+
+
+<!--DISH SCRIPT-->
+<script>
+    function calculateAndAlert() {
+        // Get input values
+        var dishName = document.getElementById("dishName").value;
+        var quantity = parseFloat(document.getElementById("quantity").value);
+        var unitPrice = parseFloat(document.getElementById("unitPrice").value);
+
+        // Calculate total price
+        var totalPrice = quantity * unitPrice;
+
+        // Display result using window alert
+        alert("Total Price for " + dishName + ": ₱" + totalPrice.toFixed(2));
+    }
+</script>
+<!--SCRIPT END HERE-->
+
+
+
+<!--FOOTER HERE-->
+            <footer>
+                <div class="footer">
+                    <br>
+                    <br>
+                    <h1 id="about">ABOUT<br><h1>SAC de Restaurante</h1></h1>
+                    <br>
+                    <p>The Restaurant Order Management System (SAC) is like the conductor of an orchestra, orchestrating every move to achieve a harmonious dining experience. From order placement to dish delivery, SAC is the key to maintaining rhythm and efficiency in both the kitchen and service. This system not only streamlines communication between kitchen and service staff but also enables precise tracking of preparation and delivery times, ensuring that customers receive their dishes at the perfect moment.
+
+                        In addition to its operational function, a restaurant's SAC can be an invaluable strategic tool. By gathering data on ordering patterns, wait times, and customer preferences, the restaurant can adjust its menu, schedules, and processes to enhance customer satisfaction and optimize operations. Ultimately, SAC is the maestro behind the scenes, ensuring that the culinary symphony runs with precision and that each customer leaves with a memorable dining experience.</p>
+                    <hr>
+                    <br>
+                    <br>
+    
+                    <h1 id="services">Services</h1>
+                    <br>
+                    <p>With our SAC services, you not only gain operational efficiency but also valuable insights into customer behavior and preferences. Our system collects and analyzes data on ordering patterns, peak hours, and popular dishes, empowering you to make informed decisions about menu optimization and resource allocation. By harnessing the power of data, you can enhance the overall dining experience, tailor your offerings to meet customer demands, and drive increased customer loyalty.
+
+                        Furthermore, our SAC services are scalable and customizable to fit the unique needs of your restaurant. Whether you run a cozy bistro or a bustling fine-dining establishment, our system adapts to your specific requirements, ensuring a tailored approach to enhance your operational capabilities. Experience the difference with our Restaurant Order Management System services and transform your restaurant into a well-orchestrated culinary masterpiece.</p>
+             
+                        <hr>
+                <div class="row">
+                <ul>
+    
+                <li><a href="">Contact us via FACEBOOK | INSTAGRAM | YOUTUBE</a></li>
+                </ul>
+                </div>
+
+                <div class="row" >
+                   <a href="https://web.facebook.com/stephanie.tumabini" target="_blank"> <i class="fa-brands fa-facebook fa-2xl"></i></a>
+                   <a href="https://www.instagram.com/tadzzz_210303/" target="_blank"> <i class="fa-brands fa-instagram fa-2xl"></i></a>
+                   <a href="https://youtube.com/@abegailsunit6892?si=q8iM2-3gXuiQR_T-" target="_blank"> <i class="fa-brands fa-youtube fa-2xl"></i></a>
+                </div>
+                
+                <a href="#top"><i class="fa-sharp fa-solid fa-circle-chevron-up fa-bounce fa-2xl" style="color: rgb(190, 106, 106); margin-left: 95%;"></i></a>
+                
+                <div class="row" id="contact">
+                SAC de Restaurante © 2023 - All rights reserved || Designed By: Stephanie Tumabini | Abigail Sunit | Chenna Rabaca
+                </div>
+                </div>
+                </footer>
+
+                <!--FOOTER END-->
+
+                </body>
+                </html>
